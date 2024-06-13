@@ -1,0 +1,98 @@
+*, html, body {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+body{
+    padding-bottom: 50px;
+}
+
+button{
+    padding: 10px 12px; 
+    border: 1px solid #E43324;
+    border-radius: 8px;
+    background: #E43324;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+    width: 200px;
+    margin-top: 20px;
+}
+
+button:hover{
+    opacity: 0.7;
+}
+
+.center{
+    display: flex;
+    justify-content: center;  
+}
+
+.form{
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form-input{
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    padding: 10px 12px;
+    width: calc(100% - 26px);
+    margin-bottom: 20px;
+    margin-left: 0;
+    margin-right: 0;
+    border: 1px solid black;
+    border-radius: 8px;
+}
+
+select {
+    padding: 10px 12px;
+    width: calc(100% - 0px);
+    margin-bottom: 20px;
+    margin-left: 0;
+    margin-right: 0;
+    border: 1px solid black;
+    border-radius: 8px;
+}
+
+
+.row{
+    display: flex;
+    justify-content: space-between;
+}
+
+.success{
+    background: rgb(167, 228, 167);
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+}
+
+.error{
+    background: rgb(228, 167, 167);
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.w-280px{
+    width: 280px;
+}
+

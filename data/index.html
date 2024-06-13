@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ScanWize Diagnostic Device Setup</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+    <div class="text-center">
+        <br><br>
+        <img src="logo.png" height="82" width="150">
+        <br><br>
+    </div>
+    <h3 class="text-center">ScanWize Diagnostic Device Configuration</h3>
+    <br><br>
+    <div class="form">
+        <form id="vehicleData">
+            <div class="row">
+                <div class="form-input w-280px">
+                    <label>First Name: </label>
+                    <input type="text" placeholder="Enter Car Owner First Name" id="firstName" name="firstName"
+                        required>
+                </div>
+                <div class="form-input w-280px">
+                    <label>Last Name: </label>
+                    <input type="text" placeholder="Enter Car Owner Second Name" id="lastName" name="lastName" required>
+                </div>
+            </div>
+            <div class="row">
+                 <div class="form-input w-280px">
+                    <label>Email: </label>
+                    <input type="email" placeholder="Enter Car Owner email" id="email" name="email" required>
+                </div>
+                <div class="form-input w-280px">
+                    <label>Vehicle Owner Gender: </label>
+                    <select id="gender" name="gender" required>
+                        <option value="" disabled selected hidden>Select Gender</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="Organization">Organization</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="form-input w-280px">
+                    <label>Phone Number: </label>
+                    <input type="tel" placeholder="Enter Car Owner Mobile Number" id="phoneNumber" name="phoneNumber"
+                        required>
+                </div>
+                <div class="form-input w-280px">
+                    <label>WhatsApp  Phone Number: </label>
+                    <input type="tel" placeholder="Enter Car Owner WhatsApp Number" id="whatsAppNumber"
+                        name="whatsAppNumber" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-input w-280px">
+                    <label>ScanWize Batch Number: </label>
+                    <input type="text" placeholder="Enter the batch Number of the device" id="batchNumber" name="batchNumber"
+                        required>
+                </div>
+                <div class="form-input w-280px">
+                    <label>ScanWize Serial Number: </label>
+                    <input type="text" placeholder="Enter the serial Number of the device" id="serialNumber" name="serialNumber"
+                        required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-input w-280px">
+                    <label>Vehicle Registration Number: </label>
+                    <input type="text" placeholder="Enter Car Reg Number" id="registrationNumber" name="registrationNumber"
+                        required>
+                </div>
+                <div class="form-input w-280px">
+                    <label>Dealer: </label> 
+                    <select id="dealerCode" name="dealerCode" required>
+                        <option value="" disabled selected hidden >Select Dealer</option>
+                        <option value="1">Proxy Auto</option>
+                        <option value="2">OBD2 Center</option>
+                        <option value="3">Mercedes Hub</option>
+                        <option value="4">PGL</option>
+                        <option value="5">Motor Fixtures LTD</option>
+                        <option value="6">Mercury Tech</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-input w-280px">
+                    <label>Vehicle Make: </label>
+                     <select id="vehicleMake" name="vehicleMake" required>
+                        <option value="" disabled selected hidden >Select Vehicle Make </option>
+
+                     </select>
+                </div>
+                <div class="form-input w-280px">
+                    <label>Vehicle Model: </label>
+                    <input type="text" placeholder="Enter Car model" id="vehicleModel" name="vehicleModel" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-input w-280px">
+                    <label>Product Type: </label>
+                    <select id="productType" name="productType" required>                      
+                        <option value="bronze">Bronze - Diagnostics</option>
+                       <!-- <option value="silver"disabled selected hidden>Silver - Diagnostics + Location</option>
+                       <option value="gold"disabled selected hidden>Gold - Diagnostics + Location + Fuel</option>-->
+                    </select>
+                </div>
+                <div class="form-input w-280px">
+                    <label>Vehicle Transmission Type: </label>
+                    <select id="transmissionType" name="transmissionType" required>
+                        <option value="" disabled selected hidden >Select Transmission Type </option>
+                        <option value="automitcTransmission">Automatic Transmission</option>
+                        <option value="maualTransmission">Manual Transmission</option>
+                        <option value="cvtTransmission">CVT Transmission</option>
+                        <option value="dualClutchTransmission">Dual Clutch / DSG Transmission</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-input w-280px">
+                    <label>Vehicle Year of Make: </label>
+                    <select id="vehicleYOM" name="vehicleYOM" required>
+                        <option value="" disabled selected hidden >Select Vehicle Year of Make </option>
+                    </select>
+                    
+                </div>
+                <div class="form-input w-280px">
+                    <label>Vehicle Colour: </label>
+                    <input type="text" placeholder="Enter car color" id="carColor" name="carColor" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-input w-280px">
+                    <label>Chassis Number: </label>
+                    <input type="text" placeholder="Enter Car chassis number" id="chassisNumber" name="chassisNumber" required>
+                </div>
+                <div class="form-input w-280px">
+                    <label>Fuel Type: </label>
+                    <select id="fuelType" name="fuelType" required>
+                        <option value="" disabled selected hidden >Select Fuel Type </option>
+                        <option value="petrol">Petrol</option>
+                        <option value="diesel">Diesel</option>
+                        <option value="petrolHybrid">Petrol Hybrid</option>
+                        <option value="dieselHybrid">Diesel Hybrid</option>
+                        <option value="electric">Electric</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-input w-280px">
+                    <label>Engine Capacity: </label>
+                    <input type="number" placeholder="Enter engine capacity" id="engineCapacity" name="engineCapacity" required>
+                </div>
+                <div class="form-input w-280px">
+                    <label>Engine Code: </label>
+                    <input type="text" placeholder="Enter engine code" id="engineCode" name="engineCode" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-input w-280px">
+                    <label>Mileage at Installation: </label>
+                    <input type="number" placeholder="Enter mileage at installation" id="mileageAtInstallation" name="mileageAtInstallation" required>
+                </div>
+                <div class="form-input w-280px">
+                    <label>Mileage Unit: </label>
+                    <select id="mileageUnit" name="mileageUnit" required>
+                        <option value="" disabled selected hidden >Select Mileage Unit </option>
+                        <option value="km">KM</option>
+                        <option value="miles">Miles</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-input w-280px">
+                    <label>Battery Brand: </label>
+                    <input type="text" placeholder="Enter battery brand" id="batteryBrand" name="batteryBrand" required>
+                </div>
+                <div class="form-input w-280px">
+                    <label>Tyre Brand: </label>
+                    <input type="text" placeholder="Enter Tyre brand" id="tyreBrand" name="tyreBrand" required>
+                </div>
+            </div>
+            <div class="center">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

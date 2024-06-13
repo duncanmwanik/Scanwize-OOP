@@ -1,0 +1,31 @@
+{
+	"folders": [
+		{
+			"path": "../../ScanMax_Wifi_Scan"
+		},
+		{
+			"name": "ScanMax_firmware",
+			"path": ".."
+		},
+		{
+			"name": "ScanMax_firebase_Test",
+			"path": "../../ScanMax_firebase_Test"
+		},
+		{
+			"name": "ScanMax_Preferences_Tests",
+			"path": "../../ScanMax_Preferences_Tests"
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"array": "cpp",
+			"deque": "cpp",
+			"string": "cpp",
+			"unordered_map": "cpp",
+			"unordered_set": "cpp",
+			"vector": "cpp",
+			"string_view": "cpp",
+			"initializer_list": "cpp"
+		}
+	}
+}

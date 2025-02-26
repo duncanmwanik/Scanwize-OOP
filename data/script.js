@@ -44,13 +44,12 @@ const sortedVehicles = vehiclesArray.sort();
 
 const selectVehicleMake = document.getElementById('vehicleMake');
 
-for(let i = 0; i < sortedVehicles.length; i++){
+for (let i = 0; i < sortedVehicles.length; i++) {
     const option = document.createElement('option');
     option.value = sortedVehicles[i];
     option.text = sortedVehicles[i];
     selectVehicleMake.appendChild(option);
 }
-
 
 const onSubmit = async (event) => {
     event.preventDefault();
@@ -80,6 +79,7 @@ const onSubmit = async (event) => {
     const mileageUnit = document.getElementById("mileageUnit").value;
     const batteryBrand = document.getElementById("batteryBrand").value;
     const tyreBrand = document.getElementById("tyreBrand").value;
+    const networkMode = document.getElementById("networkMode").value;
 
 
     const vehicleEnrollData = {
@@ -110,7 +110,8 @@ const onSubmit = async (event) => {
         batteryBrand,
         carColor,
         mileageUnit,
-        tyreBrand
+        tyreBrand,
+        networkMode
     };
 
     // console.log(vehicleEnrollData);
@@ -149,3 +150,4 @@ const onSubmit = async (event) => {
 }
 
 form.addEventListener('submit', onSubmit);
+

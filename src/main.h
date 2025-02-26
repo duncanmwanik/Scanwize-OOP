@@ -1,43 +1,37 @@
-#include <Arduino.h> 
+#ifndef MAIN_H
+#define MAIN_H
 
-extern const int led_pin; 
-extern const int buzzer_pin; 
-extern bool IS_INITIALIZED; 
-extern String storedDevId; 
+#include <Arduino.h>
+#include <Preferences.h>
+#include "device.h"
+#include "modem.h"
+#include "network.h"
+#include "accesspoint.h"
+#include "ble.h"
+#include "ota.h"
+#include "test.h"
 
-extern String firstName;
-extern String lastName;
-extern String username;
-extern String email; 
-extern String telephone; 
-extern String registrationNumber; 
-extern String vehicleRegistrationNumber;
-extern String whatsappTelephone;
-extern String vehicleMake;
-extern String model;
-extern String yearOfMake;
-extern String vehicleTelephone;
-extern String chasisNumber;
-extern String imei; 
-extern String deviceId;
-extern String storedDevId;  
-extern String firmware_version; 
+#define IS_DEBUG_MODE true
+// custom shortened serial debug
+#define logn Serial.print
+#define log Serial.println
 
-extern String fuelType; 
-extern String engineCapacity;
-extern String engineCode;
-extern String mileageAtInstallation;
-extern String batteryBrand;
-extern String carColor;
-extern String mileageUnit;
+#define FIRMWARE_VERSION "1.0.0"
+#define RESET_AFTER_MILLIS 6 * 60 * 1000 // Reset after 6 minutes.
+#define TAMPER_PIN 21
+#define R1 1000.0
+#define R2 250.0
+#define BAT_PIN 34
+#define BAT_PIN_EN 22
 
-extern bool ISENROLLED; 
-extern const char* devId; 
+extern TestVehicleClass vehicle;
+extern Device device;
+extern Modem modem;
+extern Network network;
+extern OTA ota;
+extern AccessPoint accessPoint;
+extern BLE ble;
 
-extern String gender;
-extern String batchNumber;
-extern String serialNumber;
-extern String productType;
-extern String transmissionType;
-extern String tyreBrand; 
-extern String dealerNumber; 
+extern Preferences preferences;
+
+#endif

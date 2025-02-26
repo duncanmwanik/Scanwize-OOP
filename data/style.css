@@ -1,15 +1,17 @@
-*, html, body {
+*,
+html,
+body {
     padding: 0;
     margin: 0;
     overflow-x: hidden;
 }
 
-body{
+body {
     padding-bottom: 50px;
 }
 
-button{
-    padding: 10px 12px; 
+button {
+    padding: 10px 12px;
     border: 1px solid #E43324;
     border-radius: 8px;
     background: #E43324;
@@ -18,24 +20,25 @@ button{
     font-size: 18px;
     width: 200px;
     margin-top: 20px;
+    font-weight: 500;
 }
 
-button:hover{
+button:hover {
     opacity: 0.7;
 }
 
-.center{
+.center {
     display: flex;
-    justify-content: center;  
+    justify-content: center;
 }
 
-.form{
+.form {
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
 }
 
-.form-input{
+.form-input {
     display: flex;
     flex-direction: column;
 }
@@ -61,12 +64,12 @@ select {
 }
 
 
-.row{
+.row {
     display: flex;
     justify-content: space-between;
 }
 
-.success{
+.success {
     background: rgb(167, 228, 167);
     max-width: 450px;
     margin-left: auto;
@@ -75,9 +78,10 @@ select {
     padding-top: 20px;
     padding-bottom: 20px;
     border-radius: 10px;
+    font-weight: 500;
 }
 
-.error{
+.error {
     background: rgb(228, 167, 167);
     max-width: 450px;
     margin-left: auto;
@@ -88,11 +92,10 @@ select {
     border-radius: 10px;
 }
 
-.text-center{
+.text-center {
     text-align: center;
 }
 
-.w-280px{
+.w-280px {
     width: 280px;
 }
-

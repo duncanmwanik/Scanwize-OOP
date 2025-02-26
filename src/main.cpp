@@ -5,7 +5,7 @@
 Preferences preferences;
 TestVehicleClass vehicle;
 Device device;
-OTA ota("93a0243e-6f9f-4e61-a775-a49c2c7b2c14", FIRMWARE_VERSION);
+OTA ota("93a0243e-abcd-abcd-abcd-a49c2c7b2c14", FIRMWARE_VERSION);
 Modem modem;
 Network network;
 AccessPoint accessPoint;

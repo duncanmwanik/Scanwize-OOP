@@ -3,7 +3,7 @@
 #include "main.h"
 
 bool OTAUpdates = true; 
-String OTAKey = "93a0243e-6f9f-4e61-a775-a49c2c7b2c14"; 
+String OTAKey = "your_key"; 
 
 void update_prgs(size_t i, size_t total){
   SerialMon.printf("upgrade %d/%d   %d%%\n", i, total, ((i * 100) / total));
